@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+
+    tools:context="com.example.admin.weektwoweekend.fragments.StopWatchParentFrag">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <Button
+     android:onClick="startStopWatch"
+    android:id="@+id/startEvent"
+        android:text="@string/start"
+        android:textSize="30sp"
+        android:background="@android:color/holo_orange_dark"
+     android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+     android:padding="30dp"
+        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/stopEvent"
+    android:layout_marginTop="10dp"
+    android:text="@string/stop"
+android:onClick="stopStopWatch"
+    android:textSize="30sp"
+    android:background="@android:color/holo_orange_dark"
+android:layout_alignParentRight="true"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/nestedStopWatchFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

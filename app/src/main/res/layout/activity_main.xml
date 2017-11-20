@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.weektwoweekend.MainActivity">
+   <Button
+       android:id="@+id/pdfViewer"
+       android:onClick="viewPDF"
+       android:text="View PDF File"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <com.github.barteksc.pdfviewer.PDFView
+       android:id="@+id/pdfView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <Button
+       android:onClick="showDialogFragFn"
+       android:text="Dialog Fragment"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="Alert Dialog"
+       android:id="@+id/onclickAlert"
+       android:onClick="onClickAlert"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <Button
+       android:onClick="customLayout"
+       android:text="Alert Custom Layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+<Button
+    android:text="Send Notification"
+    android:textSize="20sp"
+    android:onClick="sendNotification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+   <Button
+       android:text="Go To Stopwatch"
+       android:onClick="gotStopWatch"
+       android:textSize="20sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <Button
+       android:onClick="sendSMS"
+       android:text="Send SMS"
+       android:textSize="20sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="Go To Stopwatch"
+       android:onClick="goToStopWatch"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+</LinearLayout>
